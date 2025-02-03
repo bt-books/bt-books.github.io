@@ -51,7 +51,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -309,7 +318,7 @@
         
   
   <span class="md-ellipsis">
-    Blog
+    Index
     
   </span>
   
@@ -384,7 +393,19 @@
 
 
 <h1 id="welcome-to-books">Welcome to Books</h1>
-<p><a href="https://roadmap.sh/javascript">Roadmap.sh</a></p>
+<ul>
+<li><a href="https://roadmap.sh/javascript">Roadmap.sh</a></li>
+</ul>
+<p><a class="glightbox" href="https://pbs.twimg.com/media/GiyZzkIaQAA8Yhl?format=jpg&amp;name=large" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Desktop Setup" src="https://pbs.twimg.com/media/GiyZzkIaQAA8Yhl?format=jpg&amp;name=large" /></a></p>
+<p><a class="glightbox" href="https://pbs.twimg.com/media/GixifCraAAAbQNo?format=jpg&amp;name=large" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Money" src="https://pbs.twimg.com/media/GixifCraAAAbQNo?format=jpg&amp;name=large" width="300" /></a></p>
+<p><a class="glightbox" href="https://pbs.twimg.com/media/Gi2COMCa4AA6rGV?format=jpg&amp;name=large" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="10 things" src="https://pbs.twimg.com/media/Gi2COMCa4AA6rGV?format=jpg&amp;name=large" width="400" /></a></p>
+<p><a class="glightbox" href="https://pbs.twimg.com/media/Giz7uc9WsAISmb2?format=jpg&amp;name=4096x4096" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Getting ready for the week 📝" src="https://pbs.twimg.com/media/Giz7uc9WsAISmb2?format=jpg&amp;name=4096x4096" /></a></p>
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">This video will change your life ‼️‼️ <a href="https://t.co/HZQQMbh2lI">pic.twitter.com/HZQQMbh2lI</a></p>&mdash; The Sigma Mindset (@thesigmamindset) <a href="https://twitter.com/thesigmamindset/status/1881658499517796447?ref_src=twsrc%5Etfw">January 21, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">This is why being fast is more important than being perfect‼️ <a href="https://t.co/rZfYFZjByZ">pic.twitter.com/rZfYFZjByZ</a></p>&mdash; The Sigma Mindset (@thesigmamindset) <a href="https://twitter.com/thesigmamindset/status/1879484171984183464?ref_src=twsrc%5Etfw">January 15, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <hr />
 <ul>
 <li><a href="https://devhunt.org/">devhunt.org</a></li>
@@ -449,5 +470,7 @@
       <script src="assets/javascripts/bundle.5090c770.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
